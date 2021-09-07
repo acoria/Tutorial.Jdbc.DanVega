@@ -24,15 +24,15 @@ class Initializer {
         println("\nFound me: ----------------------------\n")
         println(animalDAO.findById(1))
 
-//        println("\nMove to the zoo: ----------------------------\n")
-//        val lion = animalDAO.findById(2)
-//        lion!!.habitat = "Zoo"
-//        animalDAO.update(lion, 2)
-//        println(animalDAO.findById(2))
-//
-//        println("\nReally move out: ----------------------------\n")
-//        animalDAO.delete(2)
-//        animals = animalDAO.findAll()
-//        animals.forEach { println(it) }
+        println("\nMove to the zoo: ----------------------------\n")
+        val lion = animalDAO.findById(2)
+        lion!!.habitat = "Zoo"
+        animalDAO.update(lion, 2)
+        println(animalDAO.findById(2))
+
+        println("\nReally move out: ----------------------------\n")
+        animalDAO.delete(2)
+        animals = animalDAO.findAll()
+        animals.forEach { println(it) }
     }
 }
